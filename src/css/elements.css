@@ -1,0 +1,155 @@
+.title {
+	grid-area: content;
+	font-size: 15vw;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	justify-self: center;
+	align-self: center;
+	position: relative;
+	z-index: 1500;
+	color: #9B62F2;
+	pointer-events: none;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: start;
+}
+
+.js .title {
+	opacity: 0;
+}
+
+.content {
+	padding: 10vh 1rem 4rem;
+}
+
+.content__title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	margin: 0;
+}
+
+.content__text {
+	font-weight: 300;
+	max-width: 600px;
+}
+
+.gallery {
+	grid-area: content;
+	justify-self: center;
+}
+
+.gallery__item {
+	position: relative;
+	margin: 25vh 0;
+	display: grid;
+	grid-template-areas: 'gallery-caption' 'gallery-image';
+	grid-template-columns: 100%;
+}
+
+.gallery__item-img {
+	grid-area: gallery-image;
+	width: calc(100vw - 20vw);
+	max-width: 375px;
+	overflow: hidden;
+	position: relative;
+	will-change: transform, opacity;
+	cursor: pointer;
+}
+
+.noscroll .gallery__item-img {
+	cursor: default;
+}
+
+.js .gallery__item-img {
+	opacity: 0;
+}
+
+.gallery__item-imginner {
+	background-size: cover;
+    background-position: 50% 0;
+    width: 100%;
+    padding-bottom: 140%;
+}
+
+.gallery__item-caption {
+	grid-area: gallery-caption;
+	padding: 0 0 1rem;
+}
+
+.gallery__item-title {
+	color:white;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 6vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	bottom: 15%;
+	pointer-events: none;
+}
+
+.gallery__item-title span.char {
+	opacity: 0;
+	will-change: transform;
+}
+
+.gallery__item-number {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	border-bottom: 1px solid #494444;
+	width: 15vw;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.gallery__item-text {
+	margin: 0;
+}
+
+.gallery__item-number,
+.gallery__item-text {
+	opacity: 0;
+	will-change: transform, opacity;
+}
+
+@media screen and (min-width: 53em) {
+	.gallery__item {
+		grid-template-areas: 'gallery-filler gallery-image gallery-caption';
+		grid-template-columns: 15vw auto 15vw;
+	}
+	.gallery__item-caption {
+		padding: 0 0 0 1rem;
+	}
+}
+
+/* Margins & Padding*/
+.mt-1{
+	margin-top: 10pt;
+}
+.mt-2{
+	margin-top: 20pt;
+}
+.mt-3{
+	margin-top: 30pt;
+}
+
+.mb-1{
+	margin-bottom: 10pt;
+}
+.mb-2{
+	margin-bottom: 20pt;
+}
+.mb-3{
+	margin-bottom: 30pt;
+}
