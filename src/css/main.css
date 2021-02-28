@@ -13,7 +13,7 @@ body {
 	--color-text: #0c0c0c;
 	background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(233,222,250,1) 35%, rgba(251,252,219,1) 100%);
-	--color-link: #7d6350;
+	--color-link: #0c0c0c;
 	--color-link-hover: #f8f6f3;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -108,7 +108,7 @@ main {
 	position: absolute;
 	width: 1rem;
 	height: 1.5rem;
-	border: 2px solid #d6beaa;
+	border: 2px solid #0c0c0c;
 	left: 0;
 	top: calc(50% - 0.75rem);
 }
